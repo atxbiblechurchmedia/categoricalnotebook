@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pastor-Teacher, Functions</title>
+	</head>
+
+	<meta charset="utf-8">
+	
+	<style>
+	.separator {
+		border: none;
+		border-top: 2px solid #ccc;
+		width: 100%;
+		margin: 10px auto;
+		height: 1px;
+	}
+	/* Font Definitions */
+	@font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+	@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+	@font-face
+	{font-family:Calibri;
+		panose-1:2 15 5 2 2 2 4 3 2 4;}
+		@font-face
+		{font-family:"\@MS Mincho";
+		panose-1:2 2 6 9 4 2 5 8 3 4;}
+		/* Style Definitions */
+		p.MsoNormal, li.MsoNormal, div.MsoNormal
+		{margin:0.25in; /* ADJUST MsoNormal MARGIN */
+			font-size:16.0pt;
+			margin-bottom:6.0pt;
+			font-family:"Arial";
+			color:black;}
+			h2
+			{mso-style-link:"Heading 2 Char";
+			margin-top:12.0pt;
+			margin-right:.25in; /* ADJUST TITLE MARGIN */
+			margin-bottom:.5in;
+			margin-left:.25in; /* ADJUST TITLE MARGIN */
+			page-break-after:avoid;
+			font-size:20.0pt; /* ADJUST TITLE FONT SIZE */
+			font-family:"Arial";
+			color:black;}
+			p.MsoHeader, li.MsoHeader, div.MsoHeader
+			{mso-style-link:"Header Char";
+			margin:0in;
+			font-size:16.0pt;
+			font-family:"Arial";
+			color:black;}
+			p.MsoFooter, li.MsoFooter, div.MsoFooter
+			{mso-style-link:"Footer Char";
+			margin:0in;
+			font-size:16.0pt;
+			font-family:"Arial";
+			color:black;}
+			a:link, span.MsoHyperlink
+			{color:blue;
+				text-decoration:underline;}
+				p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+				{mso-style-name:"No Spacing\,Block Paragraph";
+				margin-top:6.0pt;
+				margin-right:.25in; /* ADJUST BLACK BODY TEXT MARGIN */
+				margin-bottom:6.0pt;
+				margin-left:.25in; /* ADJUST BLACK BODY TEXT MARGIN */
+				text-indent:.7pt;
+				text-autospace:none;
+				font-size:16.0pt; /* ADJUST BLACK BODY TEXT FONT SIZE */
+				font-family:"Arial";
+				color:black;}
+				span.Heading2Char
+				{mso-style-name:"Heading 2 Char";
+				mso-style-link:"Heading 2";
+				font-family:"Arial";
+				color:black;
+				font-weight:bold;}
+				p.Verses, li.Verses, div.Verses
+				{mso-style-name:Verses;
+					margin-top:6.0pt;
+					margin-right:.25in; /* ADJUST BLUE BIBLE VERSE MARGIN */
+					margin-bottom:6.0pt;
+					margin-left:.25in; /* ADJUST BLUE BIBLE VERSE MARGIN */
+					text-autospace:none;
+					font-size:16.0pt; /* ADJUST BLUE BIBLE VERSE TEXT FONT SIZE */
+					font-family:"Arial";
+					color:blue;
+					font-style:italic;}
+					span.HeaderChar
+					{mso-style-name:"Header Char";
+					mso-style-link:Header;}
+					span.FooterChar
+					{mso-style-name:"Footer Char";
+					mso-style-link:Footer;}
+					.MsoChpDefault
+					{color:black;}
+					/* Page Definitions */
+					@page WordSection1
+					{size:8.5in 11.0in;
+						margin:1.0in .75in 1.0in .75in;}
+						div.WordSection1
+						{page:WordSection1;}
+						/* List Definitions */
+						ol
+						{margin-bottom:0in;}
+						ul
+						{margin-bottom:0in;}
+	</style>
+	<center>
+		<a href="https://www.austinbible.church" target="_blank" style="font-family: Arial; font-size: 11.0pt;">
+			<img src="./abc_logo.png" alt="Austin Bible Church" style="width: 175px; height: auto;">
+			<br>
+			Austin Bible Church
+		</a>
+		<div>
+			<p>
+				<button onclick="window.open('https://austinbible.church/rgb-dotb-tcnb', '_blank')">Doctrinal Index</button>
+				<button onclick="document.location='./Pastor-Teacher, Functions.docx'">Download .docx</button>
+				<button onclick="window.open('./Pastor-Teacher, Functions.pdf', '_blank')">Download .pdf</button>
+			</p>
+		</div>
+	</center>
+	<style>
+	button {
+		background-color: #4CAF50; /* Button background color */
+		color: white; /* Text color */
+		border: none; /* Remove default border */
+		padding: 12px 24px; /* Adjust padding to make buttons bigger */
+		text-align: center; /* Center text */
+		text-decoration: none; /* Remove underline */
+		display: inline-block; /* Align buttons in a row */
+		font-size: 16px; /* Adjust font size */
+		border-radius: 5px; /* Make edges slightly rounded */
+		cursor: pointer; /* Change cursor to pointer on hover */
+		margin: 5px; /* Add space between buttons */
+		transition: background-color 0.3s; /* Smooth color transition */
+	}
+	button:hover {
+		background-color: #45a049; /* Darker color on hover */
+	}
+	button:active {
+		background-color: #3e8e41; /* Even darker on click */
+		}
+	</style>
+	<hr class="separator"
+
+
+
+<body lang=EN-US link=blue vlink="#954F72" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<h2>Pastor-Teacher, Functions</h2>
+
+<p class=MsoNoSpacing>The proper functions of the pastor-teacher are important
+to the spiritual growth of the believers in a local church. In Philippians 1:1,
+“saints” is <span lang=EL>α</span>̔́<span lang=EL>γιος</span> (hagios) and refers
+to the believers in a local church. “Overseers” is <span lang=EL>ε</span>̓<span
+lang=EL>πι</span>́<span lang=EL>σκοπος</span> (episkopos) and refers to pastor-teachers.
+There are never two heads in a local church. There is no such thing as an
+assistant pastor. “Deacons” is <span lang=EL>δια</span>́<span lang=EL>κονος</span>
+(diakonos) and refers to the group of senior members of a local church who
+conduct administration of the local church under the authority of the
+pastor-teacher.  </p>
+
+<p class=Verses>“Paul and Timothy, bond-servants of Christ Jesus, To all the
+saints in Christ Jesus who are in Philippi, including the overseers and
+deacons:” (Philippians 1:1, NASB)</p>
+
+<p class=MsoNoSpacing><b>The Warning to the Elders (Pastors) </b></p>
+
+<p class=MsoNoSpacing>In 1 Peter 5:1, there were many (a plurality of) elders
+or pastor-teachers. Why? All of the New Testament epistles were written to more
+than one church such as Pontus, Galatia, Cappadocia, Asia and Bithynia. These were
+huge provinces and had many pastors in each province. 1 Peter 1:1.</p>
+
+<p class=Verses>“Therefore, I exhort the elders among you, as your fellow elder
+and witness of the sufferings of Christ, and a partaker also of the glory that
+is to be revealed,” (1 Peter 5:1, NASB)</p>
+
+<p class=Verses>“Peter, an apostle of Jesus Christ, To those who reside as
+aliens, scattered throughout Pontus, Galatia, Cappadocia, Asia, and Bithynia,
+who are chosen” (1 Peter 1:1, NASB)</p>
+
+<p class=MsoNoSpacing>An elder or pastor was not a church officer like we have
+today in the Presbyterian church. The Presbyterian form of government has a
+plurality of elders and is a wrong system of church government. In 1 Peter 5:1,
+“elders” is <span lang=EL>πρεσβυ</span>́<span lang=EL>τερος</span>
+(presbuteros) and means an old man of senior rank. The <i>eteros</i> is a
+comparative suffix which means “the most senior.” The stem <i>presbu</i> means “old
+man” and denotes high rank. With the comparative suffix it means the old man,
+the most senior.</p>
+
+<p class=MsoNoSpacing>There was one right elder for each assembly of believers.
+It was a time of extreme persecution and it was important that the authority of
+the pastor be recognized by all. The congregation must recognize the authority
+of the pastor-teacher or elder. There should be no other elders or pastors around.
+</p>
+
+<p class=MsoNoSpacing>In 1 Peter 5:1, “exhort” is the present active indicative
+of <span lang=EL>παρακαλε</span>́<span lang=EL>ω</span> (parakaleō) and can
+mean a chewing out or an encouragement. It has two almost antithetical
+meanings. The meaning here is not a chewing out, but an encouragement. He wants
+to encourage the pastors of the persecuted areas to intensify their efforts to
+get out Bible doctrine on a daily basis.</p>
+
+<p class=MsoNoSpacing>“Fellow elder” is <span lang=EL>συμπρεσβυ</span>́<span
+lang=EL>τερος</span> (sumpresbuteros) and means along with or fellow elder.
+Peter is speaking to them as their fellow elder. Notice that Peter does not
+claim primacy or to be a Pope. He speaks as one pastor to another. There are
+men today who have ministries among many pastors, but they are not apostles. Such
+ministries only exist to the extent that other pastors recognize the authority
+of that pastor as a means of encouragement and help to them. But he does not
+superimpose his authority to their congregations. Peter was not hitting their
+congregations, he was ministering to them. In times of apostacy there are
+pastor’s pastors.</p>
+
+<p class=MsoNoSpacing>In 1 Peter 5:1, “witness” is <span lang=EL>μα</span>́<span
+lang=EL>ρτυς</span> (martus) and is a judicial term. This has nothing to do
+with witnessing to someone about Christ. Peter was a witness, a judicial
+witness. He saw Jesus Christ suffer personally. That is the issue. Peter
+evangelized in Acts 2, but not here. He was an observer and as such he was like
+a legitimate witness in a courtroom.</p>
+
+<p class=MsoNoSpacing>“Partaker also of the glory” is <span lang=EL>κοινωνο</span>́<span
+lang=EL>ς</span><span lang=EL> </span>(koinōnos) and means a partner,
+associate, comrade, companion, a sharer. Peter was a partner with reference to
+eternity. Peter will share his eternal future with Christ. This includes Christ’s
+glory. The extent that we share this is determined at the Judgment Seat of
+Christ. We are all going to share in this glory from the standpoint of having
+eternal life. The reason Peter brought this up is that the glories of eternity
+cannot be compared with the sufferings of the present life. Suffering in time
+is God’s opportunity to show His grace. 2 Cor. 4:16-18.</p>
+
+<p class=Verses>“Therefore we do not lose heart, but though our outer man is
+decaying, yet our inner man is being renewed day by day. For momentary, light
+affliction is producing for us an eternal weight of glory far beyond all
+comparison, while we look not at the things which are seen, but at the things
+which are not seen; for the things which are seen are temporal, but the things
+which are not seen are eternal.” (2 Corinthians 4:16-18, NASB)</p>
+
+<p class=MsoNoSpacing>In 1 Peter 5:1, “that is to be” is the present active
+participle of <span lang=EL>με</span>́<span lang=EL>λλω</span> (mellō) and means
+about to be. Many of the believers to whom Peter was writing were going to
+suffer death in one way or another shortly. Intensification of study is needed
+because we may be dead in a year or so. If you had a month to live, what would
+you change, what would you do?</p>
+
+<p class=MsoNoSpacing>Peter was pushing for a principle. We cannot get enough
+Bible doctrine is what he was saying. “Revealed” is the present passive
+infinitive following a present active participle of <span lang=EL>α</span>̓<span
+lang=EL>ποκαλυ</span>́<span lang=EL>πτω</span> (apokaluptō). This is a dramatic
+present. Many are very close to dying. It means to reveal from the ultimate
+source of self. The passive voice means they will receive glory. The infinitive
+mood refers to the reality of their dying shortly.</p>
+
+<p class=MsoNoSpacing><b>The Intensifying Responsibility of the Pastor-teacher</b></p>
+
+<p class=MsoNoSpacing>In 1 Peter 5:2, “shepherd the flock of God” is the aorist
+active imperative of <span lang=EL>ποιμαι</span>́<span lang=EL>νω</span>
+(poimainō) and means to feed, to tend a flock, keep sheep, to shepherd. The
+whole principle of the function of the pastorate is bound up in this one word.
+The cognate form ποιμήν (poimēn) covers the whole concept of pastor. Feeding the
+sheep is only one of the shepherd’s responsibilities.</p>
+
+<p class=Verses>“shepherd the flock of God among you, exercising oversight not
+under compulsion, but voluntarily, according to the will of God; and not for
+sordid gain, but with eagerness;” (1 Peter 5:2, NASB)</p>
+
+<p class=MsoNoSpacing>The pastor-teacher provides food, spiritual food – Bible
+doctrine by daily communication. He provides green pastures – his leadership authority.
+The constantive aorist tense stresses the primary function of the pastor - daily
+teaching. The active voice means the pastor must initiate the action of the
+verb. This requires constant study and constant communication of the Word. The
+imperative mood is a command to pastors only, to provide leadership authority
+over his flock. The two primary concepts are authority and communication. </p>
+
+<p class=MsoNoSpacing>“The flock” is <span lang=EL>ποι</span>́<span lang=EL>μνιον</span>
+(poimnion) and is a contracted noun that includes all sheep. It is a
+contraction of <i>poimen</i> and <i>apnion</i>. Lest the pastor forget and
+abuse his authority, it is called the “flock of God.” The genitive of source refers
+to relationship. The pastor is the shepherd of the flock, but the flock belongs
+to God. He does not own the sheep. “Among you” refers to the local church, one
+pastor. Bible doctrine can only be taught by the one having authority.</p>
+
+<p class=MsoNoSpacing>In 1 Peter 5:2, “exercising oversight” is the present
+active participle from <span lang=EL>ε</span>̓<span lang=EL>πισκοπε</span>́<span
+lang=EL>ω</span> (episkopeō) and refers to an inspector general or overseer of
+a plantation. “Bishop” is usually the translation. This is doing the job. No
+one can teach without authority. 1 Thess. 5:12; Heb. 13:7; Heb. 13:17.</p>
+
+<p class=Verses>“But we request of you, brethren, that you appreciate those who
+diligently labor among you, and have charge over you in the Lord and give you
+instruction,” (1 Thessalonians 5:12, NASB)</p>
+
+<p class=Verses>“Remember those who led you, who spoke the word of God to you;
+and considering the result of their conduct, imitate their faith.” (Hebrews
+13:7, NASB)</p>
+
+<p class=Verses>“Obey your leaders and submit to them, for they keep watch over
+your souls as those who will give an account. Let them do this with joy and not
+with grief, for this would be unprofitable for you.” (Hebrews 13:17, NASB)</p>
+
+<p class=MsoNoSpacing>There are four attitudes expressed by four adverbs in 1
+Peter 5:2. “Not under compulsion” is the negative plus <span lang=EL>α</span>̓<span
+lang=EL>ναγκαστω</span>͂<span lang=EL>ς</span> (anagkastōs) and means not by
+compulsion. If a pastor cannot take the authority, he has no right to take the
+leadership of a local church. If he has the pastor-teacher gift, he will
+willingly take the responsibility. Many a local church has failed because the
+pastor would not assume authority or take the responsibility. The pastor cannot
+simply come in and bumble along, stumble along, preach when he can, get outside
+speakers in (mostly his friends from Bible school days), is nice to everyone,
+and is generally gutless and wants to be loved by everyone.</p>
+
+<p class=MsoNoSpacing>“But voluntarily” is <span lang=EL>ε</span>̔<span
+lang=EL>κουσι</span>́<span lang=EL>ως</span> (hekousiōs) and means
+voluntarily, eagerly, taking the authority, being responsible. “Not for sordid
+gain” is a strong negative plus <span lang=EL>αι</span>̓<span lang=EL>σχροκερδω</span>͂<span
+lang=EL>ς</span> (aischrokerdōs) and means fondness for dishonest gain. The pastor
+has a right to renumeration as taught in 1 Corinthians 9:11-14, but he must not
+commercialize or sell spiritual benefits of grace.</p>
+
+<p class=Verses>“If we sowed spiritual things in you, is it too much if we reap
+material things from you? If others share the right over you, do we not more?
+Nevertheless, we did not use this right, but we endure all things so that we
+will cause no hindrance to the gospel of Christ. Do you not know that those who
+perform sacred services eat the food of the temple, and those who attend
+regularly to the altar have their share from the altar? So also the Lord
+directed those who proclaim the gospel to get their living from the gospel.” (1
+Corinthians 9:11-14, NASB)</p>
+
+<p class=MsoNoSpacing>Grace was never meant to be sold. Grace does not have a
+price. Grace is not for sale. This is what this adverb is saying. Nobody can
+buy blessing from God. Tithing has nothing to do with grace giving. “But with
+eagerness” is <span lang=EL>προθυ</span>́<span lang=EL>μως</span> (prothumōs)
+and means to be prepared before. A prepared mind means constant, consistent,
+diligent, and daily study of the Word. These four adverbs qualify the verb <i>poimainō</i>.</p>
+
+</div>
+
+</body>
+
+</html>
