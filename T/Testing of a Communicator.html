@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Testing of a Communicator</title>
+	</head>
+
+	<meta charset="utf-8">
+	
+	<style>
+	.separator {
+		border: none;
+		border-top: 2px solid #ccc;
+		width: 100%;
+		margin: 10px auto;
+		height: 1px;
+	}
+	/* Font Definitions */
+	@font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+	@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+	@font-face
+	{font-family:Calibri;
+		panose-1:2 15 5 2 2 2 4 3 2 4;}
+		@font-face
+		{font-family:"\@MS Mincho";
+		panose-1:2 2 6 9 4 2 5 8 3 4;}
+		/* Style Definitions */
+		p.MsoNormal, li.MsoNormal, div.MsoNormal
+		{margin:0.25in; /* ADJUST MsoNormal MARGIN */
+			font-size:16.0pt;
+			margin-bottom:6.0pt;
+			font-family:"Arial";
+			color:black;}
+			h2
+			{mso-style-link:"Heading 2 Char";
+			margin-top:12.0pt;
+			margin-right:.25in; /* ADJUST TITLE MARGIN */
+			margin-bottom:.5in;
+			margin-left:.25in; /* ADJUST TITLE MARGIN */
+			page-break-after:avoid;
+			font-size:20.0pt; /* ADJUST TITLE FONT SIZE */
+			font-family:"Arial";
+			color:black;}
+			p.MsoHeader, li.MsoHeader, div.MsoHeader
+			{mso-style-link:"Header Char";
+			margin:0in;
+			font-size:16.0pt;
+			font-family:"Arial";
+			color:black;}
+			p.MsoFooter, li.MsoFooter, div.MsoFooter
+			{mso-style-link:"Footer Char";
+			margin:0in;
+			font-size:16.0pt;
+			font-family:"Arial";
+			color:black;}
+			a:link, span.MsoHyperlink
+			{color:blue;
+				text-decoration:underline;}
+				p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+				{mso-style-name:"No Spacing\,Block Paragraph";
+				margin-top:6.0pt;
+				margin-right:.25in; /* ADJUST BLACK BODY TEXT MARGIN */
+				margin-bottom:6.0pt;
+				margin-left:.25in; /* ADJUST BLACK BODY TEXT MARGIN */
+				text-indent:.7pt;
+				text-autospace:none;
+				font-size:16.0pt; /* ADJUST BLACK BODY TEXT FONT SIZE */
+				font-family:"Arial";
+				color:black;}
+				span.Heading2Char
+				{mso-style-name:"Heading 2 Char";
+				mso-style-link:"Heading 2";
+				font-family:"Arial";
+				color:black;
+				font-weight:bold;}
+				p.Verses, li.Verses, div.Verses
+				{mso-style-name:Verses;
+					margin-top:6.0pt;
+					margin-right:.25in; /* ADJUST BLUE BIBLE VERSE MARGIN */
+					margin-bottom:6.0pt;
+					margin-left:.25in; /* ADJUST BLUE BIBLE VERSE MARGIN */
+					text-autospace:none;
+					font-size:16.0pt; /* ADJUST BLUE BIBLE VERSE TEXT FONT SIZE */
+					font-family:"Arial";
+					color:blue;
+					font-style:italic;}
+					span.HeaderChar
+					{mso-style-name:"Header Char";
+					mso-style-link:Header;}
+					span.FooterChar
+					{mso-style-name:"Footer Char";
+					mso-style-link:Footer;}
+					.MsoChpDefault
+					{color:black;}
+					/* Page Definitions */
+					@page WordSection1
+					{size:8.5in 11.0in;
+						margin:1.0in .75in 1.0in .75in;}
+						div.WordSection1
+						{page:WordSection1;}
+						/* List Definitions */
+						ol
+						{margin-bottom:0in;}
+						ul
+						{margin-bottom:0in;}
+	</style>
+	<center>
+		<a href="https://www.austinbible.church" target="_blank" style="font-family: Arial; font-size: 11.0pt;">
+			<img src="./abc_logo.png" alt="Austin Bible Church" style="width: 175px; height: auto;">
+			<br>
+			Austin Bible Church
+		</a>
+		<div>
+			<p>
+				<button onclick="window.open('https://austinbible.church/rgb-dotb-tcnb', '_blank')">Doctrinal Index</button>
+				<button onclick="document.location='./Testing of a Communicator.docx'">Download .docx</button>
+				<button onclick="window.open('./Testing of a Communicator.pdf', '_blank')">Download .pdf</button>
+			</p>
+		</div>
+	</center>
+	<style>
+	button {
+		background-color: #4CAF50; /* Button background color */
+		color: white; /* Text color */
+		border: none; /* Remove default border */
+		padding: 12px 24px; /* Adjust padding to make buttons bigger */
+		text-align: center; /* Center text */
+		text-decoration: none; /* Remove underline */
+		display: inline-block; /* Align buttons in a row */
+		font-size: 16px; /* Adjust font size */
+		border-radius: 5px; /* Make edges slightly rounded */
+		cursor: pointer; /* Change cursor to pointer on hover */
+		margin: 5px; /* Add space between buttons */
+		transition: background-color 0.3s; /* Smooth color transition */
+	}
+	button:hover {
+		background-color: #45a049; /* Darker color on hover */
+	}
+	button:active {
+		background-color: #3e8e41; /* Even darker on click */
+		}
+	</style>
+	<hr class="separator"
+
+
+
+<body lang=EN-US link=blue vlink="#954F72" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<h2>Testing of a Communicator</h2>
+
+<p class=MsoNoSpacing><b>Testing and Promotion of a Communicator in a Crisis</b></p>
+
+<p class=MsoNoSpacing>The illustration of Joshua and Nehemiah in a crisis
+involved the finishing of the building of the Jerusalem walls. God has to
+promote His plan and His Word in a crisis. Promotion of the communicator of
+God's message is vitally important. Joshua 3:7; Isaiah 42:21.</p>
+
+<p class=Verses>“Now the LORD said to Joshua, &quot;This day I will begin to
+exalt you in the sight of all Israel, that they may know that just as I have
+been with Moses, I will be with you.” (Joshua 3:7, NASB)</p>
+
+<p class=Verses>“The LORD was pleased for His righteousness' sake To make the
+law great and glorious.” (Isaiah 42:21, NASB)</p>
+
+<p class=MsoNoSpacing>In the Church Age, believers belong to a family and a
+team called the Body of Christ. Rom. 12:4-5; Rom. 14:7.</p>
+
+<p class=Verses>“For just as we have many members in one body and all the
+members do not have the same function, so we, who are many, are one body in
+Christ, and individually members one of another.” (Romans 12:4-5, NASB) </p>
+
+<p class=Verses>“For not one of us lives for himself, and not one dies for
+himself;” (Romans 14:7, NASB)</p>
+
+<p class=MsoNoSpacing>God promotes a communicator to teach Bible doctrine in a
+crisis who is prepared and motivated to do so. Neh. 1:11; Neh. 2:1-2.</p>
+
+<p class=Verses>“&quot;O Lord, I beseech You, may Your ear be attentive to the
+prayer of Your servant and the prayer of Your servants who delight to revere
+Your name, and make Your servant successful today and grant him compassion
+before this man.&quot; Now I was the cupbearer to the king.” (Nehemiah 1:11,
+NASB)</p>
+
+<p class=Verses>“And it came about in the month Nisan, in the twentieth year of
+King Artaxerxes, that wine was before him, and I took up the wine and gave it
+to the king. Now I had not been sad in his presence. So the king said to me,
+&quot;Why is your face sad though you are not sick? This is nothing but sadness
+of heart.&quot; Then I was very much afraid.” (Nehemiah 2:1-2, NASB)</p>
+
+<p class=MsoNoSpacing>The communicator is to teach Bible doctrine line upon
+line, precept upon precept. Neh. 2:3-10; Isaiah 28:9-10.</p>
+
+<p class=Verses>“Then the king said to me, &quot;What would you request?&quot;
+So I prayed to the God of heaven. I said to the king, &quot;If it please the
+king, and if your servant has found favor before you, send me to Judah, to the
+city of my fathers' tombs, that I may rebuild it.&quot;” (Nehemiah 2:4-5, NASB)</p>
+
+<p class=Verses>“And I said to the king, &quot;If it please the king, let
+letters be given me for the governors of the provinces beyond the River, that
+they may allow me to pass through until I come to Judah, and a letter to Asaph
+the keeper of the king's forest, that he may give me timber to make beams for
+the gates of the fortress which is by the temple, for the wall of the city and
+for the house to which I will go.&quot; And the king granted them to me because
+the good hand of my God was on me.” (Nehemiah 2:7-8, NASB)</p>
+
+<p class=Verses>“&quot;To whom would He teach knowledge, And to whom would He
+interpret the message? Those just weaned from milk? Those just taken from the
+breast? &quot;For He says, 'Order on order, order on order, Line on line, line
+on line, A little here, a little there.'&quot;” (Isaiah 28:9-10, NASB)</p>
+
+<p class=MsoNoSpacing>God will provide a congregation who are positive to the
+Bible doctrine being taught. Neh. 2:17-20. </p>
+
+<p class=Verses>“Then I said to them, &quot;You see the bad situation we are
+in, that Jerusalem is desolate and its gates burned by fire. Come, let us
+rebuild the wall of Jerusalem so that we will no longer be a reproach.&quot; I
+told them how the hand of my God had been favorable to me and also about the
+king's words which he had spoken to me. Then they said, &quot;Let us arise and
+build.&quot; So they put their hands to the good work. But when Sanballat the
+Horonite and Tobiah the Ammonite official, and Geshem the Arab heard it, they
+mocked us and despised us and said, &quot;What is this thing you are doing? Are
+you rebelling against the king?&quot; So I answered them and said to them,
+&quot;The God of heaven will give us success; therefore we His servants will
+arise and build, but you have no portion, right or memorial in
+Jerusalem.&quot;” (Nehemiah 2:17-20, NASB)</p>
+
+<p class=MsoNoSpacing>A crisis will always involve opposition, but some
+opposition can be fatal. Neh. 4:1; Neh. 4:10; Neh. 5:1; Neh. 6:1.</p>
+
+<p class=Verses>“Now it came about that when Sanballat heard that we were
+rebuilding the wall, he became furious and very angry and mocked the Jews.”
+(Nehemiah 4:1, NASB)</p>
+
+<p class=Verses>“Thus in Judah it was said, &quot;The strength of the burden
+bearers is failing, Yet there is much rubbish; And we ourselves are unable To
+rebuild the wall.&quot;” (Nehemiah 4:10, NASB)</p>
+
+<p class=Verses>“Now there was a great outcry of the people and of their wives
+against their Jewish brothers.” (Nehemiah 5:1, NASB)</p>
+
+<p class=Verses>“Now when it was reported to Sanballat, Tobiah, to Geshem the
+Arab and to the rest of our enemies that I had rebuilt the wall, and that no
+breach remained in it, although at that time I had not set up the doors in the
+gates,” (Nehemiah 6:1, NASB)</p>
+
+<p class=MsoNoSpacing>In the example of the Jerusalem wall reconstruction, the
+opposition could not stop the wall rebuilding. Neh. 6:15. </p>
+
+<p class=Verses>“So the wall was completed on the twenty-fifth of the month
+Elul, in fifty-two days.” (Nehemiah 6:15, NASB)</p>
+
+<p class=MsoNoSpacing>God can turn cursing into blessing. In this case, the
+actions of Balaam to try to curse Israel were instead turned to blessing. Neh.
+13:1-2. </p>
+
+<p class=Verses>“On that day they read aloud from the book of Moses in the
+hearing of the people; and there was found written in it that no Ammonite or
+Moabite should ever enter the assembly of God, because they did not meet the
+sons of Israel with bread and water, but hired Balaam against them to curse
+them. However, our God turned the curse into a blessing.” (Nehemiah 13:1-2,
+NASB)</p>
+
+<p class=MsoNoSpacing>The passage of time can bring in some like Eliashib and
+Tobias who were always trying to get their fingers in the pie. Neh. 13:4-5. </p>
+
+<p class=Verses>“Now prior to this, Eliashib the priest, who was appointed over
+the chambers of the house of our God, being related to Tobiah, had prepared a
+large room for him, where formerly they put the grain offerings, the
+frankincense, the utensils and the tithes of grain, wine and oil prescribed for
+the Levites, the singers and the gatekeepers, and the contributions for the
+priests.” (Nehemiah 13:4-5, NASB)</p>
+
+<p class=MsoNoSpacing>Nehemiah found out what Eliashib and Tobias had done and
+threw their possessions out of the courts of the house of God. Neh. 13:7-8. </p>
+
+<p class=Verses>“and I came to Jerusalem and learned about the evil that
+Eliashib had done for Tobiah, by preparing a room for him in the courts of the
+house of God. It was very displeasing to me, so I threw all of Tobiah's
+household goods out of the room.” (Nehemiah 13:7-8, NASB)</p>
+
+<p class=MsoNoSpacing>Nehemiah also discovered that they had not been paying
+the Levites who had to work part-time jobs elsewhere to survive. Lack of income
+is a curse in the pastoral ministry. This was an attack upon the communicators.
+Nehemiah restored the proper distribution of offering funds to the Levites.
+Neh. 13:10; Neh. 13:13.</p>
+
+<p class=Verses>“I also discovered that the portions of the Levites had not
+been given them, so that the Levites and the singers who performed the service
+had gone away, each to his own field.” (Nehemiah 13:10, NASB) </p>
+
+<p class=Verses>“In charge of the storehouses I appointed Shelemiah the priest,
+Zadok the scribe, and Pedaiah of the Levites, and in addition to them was Hanan
+the son of Zaccur, the son of Mattaniah; for they were considered reliable, and
+it was their task to distribute to their kinsmen.” (Nehemiah 13:13, NASB)</p>
+
+<p class=MsoNoSpacing>Those living in Judah had been doing commercial
+activities on the Sabbath which is forbidden in the Mosaic Law. They were
+working on the Sabbath and outside merchants were selling on the Sabbath. They
+all were keen to know if Nehemiah was really serious about following the Mosaic
+Law. He was. Neh. 13:15; Neh. 13:20-21. </p>
+
+<p class=Verses>“In those days I saw in Judah some who were treading wine
+presses on the sabbath, and bringing in sacks of grain and loading them on
+donkeys, as well as wine, grapes, figs and all kinds of loads, and they brought
+them into Jerusalem on the sabbath day. So I admonished them on the day they
+sold food.” (Nehemiah 13:15, NASB)</p>
+
+<p class=Verses>“Once or twice the traders and merchants of every kind of
+merchandise spent the night outside Jerusalem. Then I warned them and said to
+them, &quot;Why do you spend the night in front of the wall? If you do so
+again, I will use force against you.&quot; From that time on they did not come
+on the sabbath.” (Nehemiah 13:20-21, NASB)</p>
+
+<p class=MsoNoSpacing>Those living in Judah had also married women from Ashdod,
+Ammon and Moab which was forbidden by God. Notice that Sanballat reappears.
+Problems must be straightened out! Neh. 13:23-31.</p>
+
+<p class=Verses>“In those days I also saw that the Jews had married women from
+Ashdod, Ammon and Moab. As for their children, half spoke in the language of
+Ashdod, and none of them was able to speak the language of Judah, but the
+language of his own people.” (Nehemiah 13:23-24, NASB)</p>
+
+<p class=Verses>“&quot;Do we then hear about you that you have committed all
+this great evil by acting unfaithfully against our God by marrying foreign
+women?&quot; Even one of the sons of Joiada, the son of Eliashib the high
+priest, was a son-in-law of Sanballat the Horonite, so I drove him away from
+me.” (Nehemiah 13:27-28, NASB)</p>
+
+<p class=MsoNoSpacing>In every crisis, the solution involved applying
+principles from the Word of God, at that time, the Mosaic Law. An excellent
+mental attitude was enjoyed in Nehemiah, but the will of God was not
+accomplished until the wall was built. An excellent mental attitude was enjoyed
+in Macedonia, but even in their case the offering got bogged down. </p>
+
+<p class=MsoNoSpacing>Follow-up requires the endurance to stick with a
+doctrinal principle until it benefits you. Leadership in the form of Nehemiah
+came in and applied the proper doctrines. He taught the correct Bible doctrine.
+He rectified overt trends that would have brought divine discipline to the
+nation if they had continued. </p>
+
+<p class=MsoNoSpacing><b>Testing of A Communicator Laboring in Vain</b></p>
+
+<p class=MsoNoSpacing>The worst-case scenario for any communicator of the Word
+of God is to “labor in vain.” This is a congregation in negative volition or
+emotional revolt or reversionism who fail to learn and apply the Bible doctrine
+being taught. 2 Cor. 9:3; Gal. 2:2; Gal. 4:11; Phil. 2:16; Titus 1:16; 1 Thess.
+2:1; 1 Thess. 3:5; Rom. 1:28; 1 Cor. 9:27; 2 Cor. 13:5-7; 2 Tim. 3:8.</p>
+
+<p class=Verses>“But I have sent the brethren, in order that our boasting about
+you may not be made empty in this case, so that, as I was saying, you may be
+prepared;” (2 Corinthians 9:3, NASB)</p>
+
+<p class=Verses>“It was because of a revelation that I went up; and I submitted
+to them the gospel which I preach among the Gentiles, but I did so in private
+to those who were of reputation, for fear that I might be running, or had run,
+in vain.” (Galatians 2:2, NASB)</p>
+
+<p class=Verses>“I fear for you, that perhaps I have labored over you in vain.”
+(Galatians 4:11, NASB)</p>
+
+<p class=Verses>“holding fast the word of life, so that in the day of Christ I
+will have reason to glory because I did not run in vain nor toil in vain.”
+(Philippians 2:16, NASB)</p>
+
+<p class=Verses>“They profess to know God, but by their deeds they deny Him,
+being detestable and disobedient and worthless for any good deed.” (Titus 1:16,
+NASB)</p>
+
+<p class=Verses>“Just as Jannes and Jambres opposed Moses, so these men also
+oppose the truth, men of depraved mind, rejected in regard to the faith.” (2
+Timothy 3:8, NASB)</p>
+
+<p class=MsoNoSpacing>In a crisis, the communicator may fold or the
+congregation may fold, but God remains faithful and a small percentage remains
+faithful. Rom. 10:21.</p>
+
+<p class=Verses>“But as for Israel He says, &quot;ALL THE DAY LONG I HAVE
+STRETCHED OUT MY HANDS TO A DISOBEDIENT AND OBSTINATE PEOPLE.&quot;” (Romans
+10:21, NASB)</p>
+
+<p class=MsoNoSpacing><b>Testing of Israel and Their Communicator, Moses</b></p>
+
+<p class=MsoNoSpacing>A fact of life is learning lessons through testing and
+yet many believers do not mature spiritually because they fail under testing.
+Negative volition toward God or His plan always operates on sight, using the
+closest visible target - the communicator of divine truth or Bible doctrine. </p>
+
+<p class=MsoNoSpacing>Israel folded in the ten tests in the wilderness under
+Moses. Num 14:22. </p>
+
+<p class=Verses>“&quot;Surely all the men who have seen My glory and My signs
+which I performed in Egypt and in the wilderness, yet have put Me to the test
+these ten times and have not listened to My voice,” (Numbers 14:22, NASB)</p>
+
+<p class=MsoNoSpacing>God promised to take care of Israel in every way in
+Exodus 13:19, Exodus 13:21-22, Exodus 14:13-14, Exodus 16:11-2, and Exodus
+16:14-15. In all of this, there is the expression of faith. Exodus 15:1-3.</p>
+
+<p class=Verses>“Moses took the bones of Joseph with him, for he had made the
+sons of Israel solemnly swear, saying, &quot;God will surely take care of you,
+and you shall carry my bones from here with you.&quot;” (Exodus 13:19, NASB) </p>
+
+<p class=Verses>“The LORD was going before them in a pillar of cloud by day to
+lead them on the way, and in a pillar of fire by night to give them light, that
+they might travel by day and by night. He did not take away the pillar of cloud
+by day, nor the pillar of fire by night, from before the people.” (Exodus
+13:21-22, NASB)</p>
+
+<p class=Verses>“But Moses said to the people, &quot;Do not fear! Stand by and
+see the salvation of the LORD which He will accomplish for you today; for the
+Egyptians whom you have seen today, you will never see them again forever.
+&quot;The LORD will fight for you while you keep silent.&quot;” (Exodus
+14:13-14, NASB)</p>
+
+<p class=Verses>“And the LORD spoke to Moses, saying, &quot;I have heard the
+grumblings of the sons of Israel; speak to them, saying, 'At twilight you shall
+eat meat, and in the morning you shall be filled with bread; and you shall know
+that I am the LORD your God.'&quot;” (Exodus 16:11-12, NASB) </p>
+
+<p class=Verses>“When the layer of dew evaporated, behold, on the surface of
+the wilderness there was a fine flake-like thing, fine as the frost on the
+ground. When the sons of Israel saw it, they said to one another, &quot;What is
+it?&quot; For they did not know what it was. And Moses said to them, &quot;It
+is the bread which the LORD has given you to eat.” (Exodus 16:14-15, NASB)</p>
+
+<p class=Verses>“Then Moses and the sons of Israel sang this song to the LORD,
+and said, &quot;I will sing to the LORD, for He is highly exalted; The horse
+and its rider He has hurled into the sea. &quot;The LORD is my strength and
+song, And He has become my salvation; This is my God, and I will praise Him; My
+father's God, and I will extol Him. &quot;The LORD is a warrior; The LORD is
+His name.” (Exodus 15:1-3, NASB)</p>
+
+<p class=MsoNoSpacing>Test 1 was the mental attitude test for the people of
+Israel, whether they would have a mental attitude of fear or trust in the Lord
+for their deliverance and protection. They failed the test. All they had was
+fear. They were complaining against leadership and against God in their fear.
+Moses was also tested by handling their complaining mental attitude. What is
+the solution to fear? Trust in God. Moses answered with what the Lord would do
+for them. He would deliver them. Exodus 14:10-12; 1 John 4:18; Exodus 14:13-14.</p>
+
+<p class=Verses>“As Pharaoh drew near, the sons of Israel looked, and behold,
+the Egyptians were marching after them, and they became very frightened; so the
+sons of Israel cried out to the LORD. Then they said to Moses, &quot;Is it
+because there were no graves in Egypt that you have taken us away to die in the
+wilderness? Why have you dealt with us in this way, bringing us out of Egypt?
+&quot;Is this not the word that we spoke to you in Egypt, saying, 'Leave us
+alone that we may serve the Egyptians'? For it would have been better for us to
+serve the Egyptians than to die in the wilderness.&quot;” (Exodus 14:10-12,
+NASB)</p>
+
+<p class=Verses>“There is no fear in love; but perfect love casts out fear,
+because fear involves punishment, and the one who fears is not perfected in
+love.” (1 John 4:18, NASB)</p>
+
+<p class=Verses>“But Moses said to the people, &quot;Do not fear! Stand by and
+see the salvation of the LORD which He will accomplish for you today; for the
+Egyptians whom you have seen today, you will never see them again forever.
+&quot;The LORD will fight for you while you keep silent.&quot;” (Exodus
+14:13-14, NASB)</p>
+
+<p class=MsoNoSpacing>Test 2 was a test of the details of life. Israel’s test
+was about God's provision of water, food, shelter, and clothing in the
+wilderness. They had a mental attitude sin of bitterness and complaining when
+they tasted the water in Marah. Their griping against Moses and God was
+answered by God providing blessing in spite of their unbelief. They also failed
+this test. God was still faithful and brought them to Elim where the water was
+sweet. Exodus 15:23-27.</p>
+
+<p class=Verses>“When they came to Marah, they could not drink the waters of
+Marah, for they were bitter; therefore it was named Marah. So the people
+grumbled at Moses, saying, &quot;What shall we drink?&quot; Then he cried out
+to the LORD, and the LORD showed him a tree; and he threw it into the waters,
+and the waters became sweet. There He made for them a statute and regulation,
+and there He tested them. And He said, &quot;If you will give earnest heed to
+the voice of the LORD your God, and do what is right in His sight, and give ear
+to His commandments, and keep all His statutes, I will put none of the diseases
+on you which I have put on the Egyptians; for I, the LORD, am your
+healer.&quot; Then they came to Elim where there were twelve springs of water
+and seventy date palms, and they camped there beside the waters.” (Exodus
+15:23-27, NASB)</p>
+
+<p class=MsoNoSpacing>Test 3 was another details of life test. The test was
+whether they believed that God would provide their daily needs. Here, Israel
+complained about lack of food to eat and the communicator was criticized. Even
+though they grumbled in unbelief, God remained faithful and rained manna from
+heaven to feed them. Bread was a faith-rest test. This was also a test of
+geographical location, a test to prove them. Moses and Aaron were also tested
+in how they handled the complaining while maintaining their trust in the Lord.
+God provided blessing instead of cursing. They failed this third test. Exodus
+16:2-4. </p>
+
+<p class=Verses>“The whole congregation of the sons of Israel grumbled against
+Moses and Aaron in the wilderness. The sons of Israel said to them, &quot;Would
+that we had died by the LORD'S hand in the land of Egypt, when we sat by the
+pots of meat, when we ate bread to the full; for you have brought us out into
+this wilderness to kill this whole assembly with hunger.&quot; Then the LORD
+said to Moses, &quot;Behold, I will rain bread from heaven for you; and the
+people shall go out and gather a day's portion every day, that I may test them,
+whether or not they will walk in My instruction.” (Exodus 16:2-4, NASB)</p>
+
+<p class=MsoNoSpacing>Test 4 was another faith-rest test about the details of
+life - water. They griped and wanted to go back to Egypt. They would not put
+their trust in God's provision. Again they criticized God's communicator and
+leader, Moses. God again faithfully provided water even in their unbelief. They
+failed the fourth test. Exodus 17:1-3; Exodus 17:6.</p>
+
+<p class=Verses>“Then all the congregation of the sons of Israel journeyed by
+stages from the wilderness of Sin, according to the command of the LORD, and
+camped at Rephidim, and there was no water for the people to drink. Therefore
+the people quarreled with Moses and said, &quot;Give us water that we may
+drink.&quot; And Moses said to them, &quot;Why do you quarrel with me? Why do
+you test the LORD?&quot; But the people thirsted there for water; and they
+grumbled against Moses and said, &quot;Why, now, have you brought us up from
+Egypt, to kill us and our children and our livestock with thirst?&quot;”
+(Exodus 17:1-3, NASB)</p>
+
+<p class=Verses>“&quot;Behold, I will stand before you there on the rock at
+Horeb; and you shall strike the rock, and water will come out of it, that the
+people may drink.&quot; And Moses did so in the sight of the elders of Israel.”
+(Exodus 17:6, NASB)</p>
+
+<p class=MsoNoSpacing>Moses striking the rock in Exodus 7:6 was a picture or
+shadow of Jesus Christ’s (the Rock) future substitutionary spiritual death on
+the Cross when He was judged by God the Father for the sins of all mankind. </p>
+
+<p class=Verses>“&quot;Behold, I will stand before you there on the rock at
+Horeb; and you shall strike the rock, and water will come out of it, that the
+people may drink.&quot; And Moses did so in the sight of the elders of Israel.”
+(Exodus 17:6, NASB)</p>
+
+<p class=MsoNoSpacing>Test 5 was the golden calf incident and was a relaxed
+mental attitude test and a test of authority orientation for the people of
+Israel. Because Moses was on the mountain longer than the congregation of
+Israel thought he should be, their negative volition and impatience resulted in
+seeking Aaron, a weak leader, with their demand that he fulfill their desire
+for another god - the golden calf. </p>
+
+<p class=MsoNoSpacing>Aaron failed in his test of leadership. The people of
+Israel failed their test and sought a new god of their own making. This was a
+very serious rebellion against the authority of their leaders and their
+communication authority. Exodus 32:1; Exodus 32:4-5</p>
+
+<p class=Verses>“Now when the people saw that Moses delayed to come down from
+the mountain, the people assembled about Aaron and said to him, &quot;Come,
+make us a god who will go before us; as for this Moses, the man who brought us
+up from the land of Egypt, we do not know what has become of him.&quot;”
+(Exodus 32:1, NASB)</p>
+
+<p class=Verses>“He took this from their hand, and fashioned it with a graving
+tool and made it into a molten calf; and they said, &quot;This is your god, O
+Israel, who brought you up from the land of Egypt.&quot; Now when Aaron saw
+this, he built an altar before it; and Aaron made a proclamation and said,
+&quot;Tomorrow shall be a feast to the LORD.&quot;” (Exodus 32:4-5, NASB)</p>
+
+<p class=MsoNoSpacing>In Test 5, God’s divine discipline for their rebellion
+was the Sin Unto Death for 3,000 believers who remained negative to God's plan
+of grace. Exodus 32:7; Exodus 32:19-20; Exodus 32:28. </p>
+
+<p class=Verses>“Then the LORD spoke to Moses, &quot;Go down at once, for your
+people, whom you brought up from the land of Egypt, have corrupted themselves.”
+(Exodus 32:7, NASB)</p>
+
+<p class=Verses>“It came about, as soon as Moses came near the camp, that he
+saw the calf and the dancing; and Moses' anger burned, and he threw the tablets
+from his hands and shattered them at the foot of the mountain. He took the calf
+which they had made and burned it with fire, and ground it to powder, and
+scattered it over the surface of the water and made the sons of Israel drink
+it.” (Exodus 32:19-20, NASB)</p>
+
+<p class=Verses>“So the sons of Levi did as Moses instructed, and about three
+thousand men of the people fell that day.” (Exodus 32:28, NASB)</p>
+
+<p class=MsoNoSpacing>Test 6 was about whether the sons of Israel believed that
+the battle was the Lord’s in entering the Land of Promise. They were in
+self-pity and wouldn’t put on their ornaments. The ornaments signified trust,
+protection, and rapport. They had no trust in God and they took themselves more
+seriously than they took Bible doctrine. They failed this part of the test.
+Exodus 33:2-5.</p>
+
+<p class=Verses>“&quot;I will send an angel before you and I will drive out the
+Canaanite, the Amorite, the Hittite, the Perizzite, the Hivite and the
+Jebusite. &quot;Go up to a land flowing with milk and honey; for I will not go
+up in your midst, because you are an obstinate people, and I might destroy you
+on the way.&quot; When the people heard this sad word, they went into mourning,
+and none of them put on his ornaments. For the LORD had said to Moses,
+&quot;Say to the sons of Israel, 'You are an obstinate people; should I go up
+in your midst for one moment, I would destroy you. Now therefore, put off your
+ornaments from you, that I may know what I shall do with you.'&quot;” (Exodus
+33:2-5, NASB)</p>
+
+<p class=MsoNoSpacing>Test 6 was also a rapport test. Moses interceded for the
+people of Israel and prayed to God that He would remain with them as an outward
+demonstration that the people of Israel were God's people. When Moses entered
+the tent of meeting, all worshipped, every man in his tent door. This was a
+demonstration of rapport with our Lord.</p>
+
+<p class=Verses>“Whenever Moses entered the tent, the pillar of cloud would
+descend and stand at the entrance of the tent; and the LORD would speak with
+Moses. When all the people saw the pillar of cloud standing at the entrance of
+the tent, all the people would arise and worship, each at the entrance of his
+tent. Thus the LORD used to speak to Moses face to face, just as a man speaks
+to his friend. When Moses returned to the camp, his servant Joshua, the son of
+Nun, a young man, would not depart from the tent.” (Exodus 33:9-11, NASB)</p>
+
+<p class=MsoNoSpacing>Test 7 was an emotional revolt test. Would the people of
+Israel trust the Lord for the endurance to march? They were in disbelief with
+regard to the character of God. God administered the Sin Unto Death to some as
+a fire judgment for their complaining and unbelief. This was a shock discipline
+to get their attention. Moses, the communicator, prayed and the judgment
+stopped. They failed this test. Num. 11:1-3.</p>
+
+<p class=Verses>“Now the people became like those who complain of adversity in
+the hearing of the LORD; and when the LORD heard it, His anger was kindled, and
+the fire of the LORD burned among them and consumed some of the outskirts of
+the camp. The people therefore cried out to Moses, and Moses prayed to the LORD
+and the fire died out. So the name of that place was called Taberah, because
+the fire of the LORD burned among them.” (Numbers 11:1-3, NASB)</p>
+
+<p class=MsoNoSpacing>Test 8 was about whether the people of Israel were
+satisfied with what the Lord provided on a daily basis. They complained about
+lack of meat. They were tired of just manna. Num. 11:4-6.</p>
+
+<p class=Verses>“The rabble who were among them had greedy desires; and also
+the sons of Israel wept again and said, &quot;Who will give us meat to eat?
+&quot;We remember the fish which we used to eat free in Egypt, the cucumbers
+and the melons and the leeks and the onions and the garlic, but now our
+appetite is gone. There is nothing at all to look at except this manna.&quot;”
+(Numbers 11:4-6, NASB)</p>
+
+<p class=MsoNoSpacing>The people of Israel only remembered to good aspects of
+their time in Egypt. They had conveniently forgotten about their slavery in
+Egypt. Do you remember the past as the good old days? Do you remember your
+younger social life as being more fun and failing to remember the tough times?
+Do you have any ability to face your present reality? </p>
+
+<p class=MsoNoSpacing>God's answer to their greed and unbelief was to bring so
+many quail that they covered the ground about three feet deep (2 cubits) for
+miles in all directions (a day’s travel). Our Lord also brought a plague as the
+Sin Unto Death for those who were greedy. They failed this test also. Num.
+11:31-34.</p>
+
+<p class=Verses>“Now there went forth a wind from the LORD and it brought quail
+from the sea, and let them fall beside the camp, about a day's journey on this
+side and a day's journey on the other side, all around the camp and about two
+cubits deep on the surface of the ground. The people spent all day and all
+night and all the next day, and gathered the quail (he who gathered least
+gathered ten homers) and they spread them out for themselves all around the
+camp. While the meat was still between their teeth, before it was chewed, the
+anger of the LORD was kindled against the people, and the LORD struck the
+people with a very severe plague. So the name of that place was called
+Kibroth-hattaavah, because there they buried the people who had been greedy.”
+(Numbers 11:31-34, NASB)</p>
+
+<p class=MsoNoSpacing>Test 9 was a very serious communicator test. Miriam and
+Aaron spoke against Moses about his Cushite wife. This was jealousy. God’s
+divine discipline was leprosy of Miriam for seven days as a visible
+manifestation of negative volition. This would have been the Sin Unto Death if
+Aaron and Moses had not interceded for her. They failed this test. Numbers 12.</p>
+
+<p class=Verses>“Then Miriam and Aaron spoke against Moses because of the
+Cushite woman whom he had married (for he had married a Cushite woman);”
+(Numbers 12:1, NASB)</p>
+
+<p class=Verses>“Then the LORD came down in a pillar of cloud and stood at the
+doorway of the tent, and He called Aaron and Miriam. When they had both come
+forward,” (Numbers 12:5, NASB)</p>
+
+<p class=Verses>“So the anger of the LORD burned against them and He departed.
+But when the cloud had withdrawn from over the tent, behold, Miriam was
+leprous, as white as snow. As Aaron turned toward Miriam, behold, she was
+leprous.” (Numbers 12:9-10, NASB)</p>
+
+<p class=Verses>“Then Aaron said to Moses, &quot;Oh, my lord, I beg you, do not
+account this sin to us, in which we have acted foolishly and in which we have
+sinned. &quot;Oh, do not let her be like one dead, whose flesh is half eaten
+away when he comes from his mother's womb!&quot; Moses cried out to the LORD,
+saying, &quot;O God, heal her, I pray!&quot; But the LORD said to Moses,
+&quot;If her father had but spit in her face, would she not bear her shame for
+seven days? Let her be shut up for seven days outside the camp, and afterward
+she may be received again.&quot;” (Numbers 12:11-14, NASB)</p>
+
+<p class=MsoNoSpacing>Test 10 is the conclusion test. All the children of
+Israel complained against Moses and against Aaron. They opposed their
+God-appointed leaders and in negative volition, they decided that they needed a
+new leader to take them back to Egypt. Num. 14:1-4</p>
+
+<p class=Verses>“Then all the congregation lifted up their voices and cried,
+and the people wept that night. All the sons of Israel grumbled against Moses
+and Aaron; and the whole congregation said to them, &quot;Would that we had
+died in the land of Egypt! Or would that we had died in this wilderness!
+&quot;Why is the LORD bringing us into this land, to fall by the sword? Our
+wives and our little ones will become plunder; would it not be better for us to
+return to Egypt?&quot; So they said to one another, &quot;Let us appoint a
+leader and return to Egypt.&quot;” (Numbers 14:1-4, NASB)</p>
+
+<p class=MsoNoSpacing>Do you understand the ultimate end of the believer that
+stays negative to God for the long-term? It is the Sin Unto Death. The people
+of Israel maintained their negative volition and complaining against Moses and
+Aaron. When they were negative to Moses and Aaron, God's appointed leaders,
+they were rejecting God and His continual grace provision and His promises. </p>
+
+<p class=MsoNoSpacing>In Numbers 14:7-9, they rejected the good report from
+Joshua and Caleb who had spied out the Land and had reported back. Their fear
+controlled them in their negative volition.</p>
+
+<p class=Verses>“and they spoke to all the congregation of the sons of Israel,
+saying, &quot;The land which we passed through to spy out is an exceedingly
+good land. &quot;If the LORD is pleased with us, then He will bring us into
+this land and give it to us—a land which flows with milk and honey. &quot;Only
+do not rebel against the LORD; and do not fear the people of the land, for they
+will be our prey. Their protection has been removed from them, and the LORD is
+with us; do not fear them.&quot;” (Numbers 14:7-9, NASB)</p>
+
+<p class=MsoNoSpacing>In Numbers 14:10-12, the people of Israel sought to stone
+their leaders to death. This was overt breaking of the law and a demonstration
+of their unbelief. </p>
+
+<p class=Verses>“But all the congregation said to stone them with stones. Then
+the glory of the LORD appeared in the tent of meeting to all the sons of
+Israel. The LORD said to Moses, &quot;How long will this people spurn Me? And
+how long will they not believe in Me, despite all the signs which I have
+performed in their midst? &quot;I will smite them with pestilence and
+dispossess them, and I will make you into a nation greater and mightier than
+they.&quot;” (Numbers 14:10-12, NASB)</p>
+
+<p class=MsoNoSpacing>In Numbers 14:22-24, God's response was that the first
+generation, all that were over 20 years old but two, would not enter the Land. </p>
+
+<p class=Verses>“&quot;Surely all the men who have seen My glory and My signs
+which I performed in Egypt and in the wilderness, yet have put Me to the test
+these ten times and have not listened to My voice, shall by no means see the
+land which I swore to their fathers, nor shall any of those who spurned Me see
+it. &quot;But My servant Caleb, because he has had a different spirit and has
+followed Me fully, I will bring into the land which he entered, and his
+descendants shall take possession of it.” (Numbers 14:22-24, NASB)</p>
+
+<p class=MsoNoSpacing>All but two of the first generation of believers would
+die the Sin Unto Death in the desert. Num. 14:29-30.</p>
+
+<p class=Verses>“your corpses will fall in this wilderness, even all your
+numbered men, according to your complete number from twenty years old and
+upward, who have grumbled against Me. 'Surely you shall not come into the land
+in which I swore to settle you, except Caleb the son of Jephunneh and Joshua
+the son of Nun.” (Numbers 14:29-30, NASB)</p>
+
+<p class=MsoNoSpacing>Negative volition of the congregation causes great
+despair and heaviness on the part of the communicator. Num. 11:10; Num. 20:2. </p>
+
+<p class=Verses>“Now Moses heard the people weeping throughout their families,
+each man at the doorway of his tent; and the anger of the LORD was kindled
+greatly, and Moses was displeased.” (Numbers 11:10, NASB)</p>
+
+<p class=Verses>“There was no water for the congregation, and they assembled
+themselves against Moses and Aaron.” (Numbers 20:2, NASB)</p>
+
+<p class=MsoNoSpacing>Negative volition comes out in four visible distinct
+areas; audible and inaudible refusal to assemble, refusal to accept the
+teaching of Bible doctrine due to emotional revolt, refusal to accept the plan
+of God and His communicator, and ultimately refusal to believe and accept the
+Word of God as taught.</p>
+
+<p class=MsoNoSpacing>God's answer to long-term negative volition to Bible
+doctrine and opposition to Him and His grace plan is the most severe form of
+divine discipline - the Sin Unto Death. At any point in that downward spiral
+into reversionism, the believer can recover by confessing their known sins to
+God the Father and be immediately restored to fellowship and the filling of the
+Holy Spirit. The Sin Unto Death will be halted. For the first generation of the
+Exodus, all but two would die in the desert. But their children would remain
+positive to God's promises and His grace and would enter the Land. Num.
+14:30-31.</p>
+
+<p class=Verses>“'Surely you shall not come into the land in which I swore to
+settle you, except Caleb the son of Jephunneh and Joshua the son of Nun. 'Your
+children, however, whom you said would become a prey—I will bring them in, and
+they will know the land which you have rejected.” (Numbers 14:30-31, NASB)</p>
+
+<p class=MsoNoSpacing>1 Corinthians 10:1-6 is a reminder to us today of the
+ultimate result of long-term negative volition and opposition to God's plan and
+grace provision. </p>
+
+<p class=Verses>“For I do not want you to be unaware, brethren, that our
+fathers were all under the cloud and all passed through the sea; and all were
+baptized into Moses in the cloud and in the sea; and all ate the same spiritual
+food; and all drank the same spiritual drink, for they were drinking from a
+spiritual rock which followed them; and the rock was Christ. Nevertheless, with
+most of them God was not well-pleased; for they were laid low in the
+wilderness. Now these things happened as examples for us, so that we would not
+crave evil things as they also craved.” (1 Corinthians 10:1-6, NASB)</p>
+
+<p class=MsoNoSpacing>Compare the two ways the ten tests were handled. One way
+deals especially with bucking the authority of the communicator and the other
+from the problems the people faced because they could not pass their
+communicator tests.</p>
+
+<p class=MsoNoSpacing>In the function of the grace apparatus for perception,
+Bible doctrine is communicated to the positive believer. The Holy Spirit
+teaches the believer’s human spirit resulting in spiritually understood
+information. The Holy Spirit then transfers it to the left lobe of the soul as <i>gnosis</i>
+Bible doctrine or understood spiritual knowledge. If the believer accepts that
+that <i>gnosis</i> by faith, the Holy Spirit then converts it to <i>epignosis</i>
+Bible doctrine or full knowledge and transfers it to the right lobe of the soul.
+Only <i>epignosis</i> Bible doctrine in the right lobe is usable for the
+spiritual life and then only when filled with the Holy Spirit. See category on
+the <a href="#_Grace_Apparatus_For">Grace Apparatus For Perception</a>. </p>
+
+<p class=MsoNoSpacing>God then brings tests that require the believer to apply
+the believed <i>epignosis</i> knowledge to pass the tests. God's tests are
+always whether you will use God's grace resources and power (passing the test)
+or attempt to use your human abilities instead (failing the test). This is
+where the Israelites broke down in the function of claiming God's promises and
+having the faith to rely on Him to fulfill His promises to them. They were
+continually failing their tests! They never had positive volition and therefore
+never grew spiritually.  </p>
+
+<p class=MsoNoSpacing>As a believer in the Lord Jesus Christ, prayer is a
+demonstration of positive volition and applying Bible doctrine. Salt is also
+positive volition enduring hardness in maturing in doctrine. Light is positive
+volition producing the fruits of the spiritual life. The end result is the
+glorification of the Lord Jesus Christ. Col. 2:9-10.</p>
+
+<p class=Verses>“For in Him all the fullness of Deity dwells in bodily form,
+and in Him you have been made complete, and He is the head over all rule and
+authority;” (Colossians 2:9-10, NASB)</p>
+
+<p class=MsoNoSpacing>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>
