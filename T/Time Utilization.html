@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Time Utilization</title>
+	</head>
+
+	<meta charset="utf-8">
+	
+	<style>
+	.separator {
+		border: none;
+		border-top: 2px solid #ccc;
+		width: 100%;
+		margin: 10px auto;
+		height: 1px;
+	}
+	/* Font Definitions */
+	@font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+	@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+	@font-face
+	{font-family:Calibri;
+		panose-1:2 15 5 2 2 2 4 3 2 4;}
+		@font-face
+		{font-family:"\@MS Mincho";
+		panose-1:2 2 6 9 4 2 5 8 3 4;}
+		/* Style Definitions */
+		p.MsoNormal, li.MsoNormal, div.MsoNormal
+		{margin:0.25in; /* ADJUST MsoNormal MARGIN */
+			font-size:16.0pt;
+			margin-bottom:6.0pt;
+			font-family:"Arial";
+			color:black;}
+			h2
+			{mso-style-link:"Heading 2 Char";
+			margin-top:12.0pt;
+			margin-right:.25in; /* ADJUST TITLE MARGIN */
+			margin-bottom:.5in;
+			margin-left:.25in; /* ADJUST TITLE MARGIN */
+			page-break-after:avoid;
+			font-size:20.0pt; /* ADJUST TITLE FONT SIZE */
+			font-family:"Arial";
+			color:black;}
+			p.MsoHeader, li.MsoHeader, div.MsoHeader
+			{mso-style-link:"Header Char";
+			margin:0in;
+			font-size:16.0pt;
+			font-family:"Arial";
+			color:black;}
+			p.MsoFooter, li.MsoFooter, div.MsoFooter
+			{mso-style-link:"Footer Char";
+			margin:0in;
+			font-size:16.0pt;
+			font-family:"Arial";
+			color:black;}
+			a:link, span.MsoHyperlink
+			{color:blue;
+				text-decoration:underline;}
+				p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+				{mso-style-name:"No Spacing\,Block Paragraph";
+				margin-top:6.0pt;
+				margin-right:.25in; /* ADJUST BLACK BODY TEXT MARGIN */
+				margin-bottom:6.0pt;
+				margin-left:.25in; /* ADJUST BLACK BODY TEXT MARGIN */
+				text-indent:.7pt;
+				text-autospace:none;
+				font-size:16.0pt; /* ADJUST BLACK BODY TEXT FONT SIZE */
+				font-family:"Arial";
+				color:black;}
+				span.Heading2Char
+				{mso-style-name:"Heading 2 Char";
+				mso-style-link:"Heading 2";
+				font-family:"Arial";
+				color:black;
+				font-weight:bold;}
+				p.Verses, li.Verses, div.Verses
+				{mso-style-name:Verses;
+					margin-top:6.0pt;
+					margin-right:.25in; /* ADJUST BLUE BIBLE VERSE MARGIN */
+					margin-bottom:6.0pt;
+					margin-left:.25in; /* ADJUST BLUE BIBLE VERSE MARGIN */
+					text-autospace:none;
+					font-size:16.0pt; /* ADJUST BLUE BIBLE VERSE TEXT FONT SIZE */
+					font-family:"Arial";
+					color:blue;
+					font-style:italic;}
+					span.HeaderChar
+					{mso-style-name:"Header Char";
+					mso-style-link:Header;}
+					span.FooterChar
+					{mso-style-name:"Footer Char";
+					mso-style-link:Footer;}
+					.MsoChpDefault
+					{color:black;}
+					/* Page Definitions */
+					@page WordSection1
+					{size:8.5in 11.0in;
+						margin:1.0in .75in 1.0in .75in;}
+						div.WordSection1
+						{page:WordSection1;}
+						/* List Definitions */
+						ol
+						{margin-bottom:0in;}
+						ul
+						{margin-bottom:0in;}
+	</style>
+	<center>
+		<a href="https://www.austinbible.church" target="_blank" style="font-family: Arial; font-size: 11.0pt;">
+			<img src="./abc_logo.png" alt="Austin Bible Church" style="width: 175px; height: auto;">
+			<br>
+			Austin Bible Church
+		</a>
+		<div>
+			<p>
+				<button onclick="window.open('https://austinbible.church/rgb-dotb-tcnb', '_blank')">Doctrinal Index</button>
+				<button onclick="document.location='./Time Utilization.docx'">Download .docx</button>
+				<button onclick="window.open('./Time Utilization.pdf', '_blank')">Download .pdf</button>
+			</p>
+		</div>
+	</center>
+	<style>
+	button {
+		background-color: #4CAF50; /* Button background color */
+		color: white; /* Text color */
+		border: none; /* Remove default border */
+		padding: 12px 24px; /* Adjust padding to make buttons bigger */
+		text-align: center; /* Center text */
+		text-decoration: none; /* Remove underline */
+		display: inline-block; /* Align buttons in a row */
+		font-size: 16px; /* Adjust font size */
+		border-radius: 5px; /* Make edges slightly rounded */
+		cursor: pointer; /* Change cursor to pointer on hover */
+		margin: 5px; /* Add space between buttons */
+		transition: background-color 0.3s; /* Smooth color transition */
+	}
+	button:hover {
+		background-color: #45a049; /* Darker color on hover */
+	}
+	button:active {
+		background-color: #3e8e41; /* Even darker on click */
+		}
+	</style>
+	<hr class="separator"
+
+
+
+<body lang=EN-US link=blue vlink="#954F72" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<h2><a name="_D-Utilization_of_Time_1"></a><a name="_Time_Utilization"></a>Time
+Utilization</h2>
+
+<p class=MsoNoSpacing>The best way to live life is to live each day to the full
+as it comes, one by one, one day at a time. God has designed the Christian life
+to be lived one day at a time. In Psalms 90:10, “Yet their pride is but labor
+and sorrow” means that unless you are in God's plan, all that you do in life is
+useless labor, just existing, just an empty life and sitting around waiting to
+die. </p>
+
+<p class=Verses>“As for the days of our life, they contain seventy years, Or if
+due to strength, eighty years, Yet their pride is but labor and sorrow; For
+soon it is gone and we fly away.” (Psalms 90:10, NASB)</p>
+
+<p class=MsoNoSpacing>There are two ways to learn the Word of God, the easy way
+where you consistently come to learn Bible doctrine or the hard way where you
+learn through God’s divine discipline. Either you are going to know the fear
+(respect) of the Lord through learning and applying <i>epignosis</i> Bible
+doctrine in your soul or you are going to know His wrath through the
+administration of divine discipline to get you back to God's plan for your
+life. Psalms 90:11.</p>
+
+<p class=Verses>“Who understands the power of Your anger And Your fury,
+according to the fear that is due You?” (Psalms 90:11, NASB)</p>
+
+<p class=MsoNoSpacing>It is not the extension of your life that counts, but how
+you use each day. In Psalms 90:12, “So teach us to number our days” is emphatic
+and means we are to organize our days for the purpose of learning the Word of
+God. Every day is a gracious gift from God in our life on earth to be purchased
+by means of the filling of the Spirit plus the function of the grace apparatus
+for perception resulting in the construction of the edification complex of the
+soul and developing “a heart of wisdom.” Psalms 118:24. </p>
+
+<p class=Verses>“So teach us to number our days, That we may present to You a
+heart of wisdom.” (Psalms 90:12, NASB)</p>
+
+<p class=Verses>“This is the day which the LORD has made; Let us rejoice and be
+glad in it.” (Psalms 118:24, NASB)</p>
+
+<p class=MsoNoSpacing>God’s plan for us is measured by days not years. The
+Christian life exists for you to grow to spiritual maturity with a completed edification
+complex of the soul. The believer with an edification complex built from <i>epignosis</i>
+Bible doctrine in the right lobe of their soul regards every day alike. The
+Christian life also exists for you to produce maximum divine good. We are to
+develop this divine viewpoint while we are still young, if possible. Prioritize
+the daily intake of the Word of God above your social life. Organize your days.
+Plan to get the Word daily. </p>
+
+<p class=MsoNoSpacing>God provides the capital to make each day count for Him
+under the title of “greater grace.” God provides the grace means and resources.
+<span lang=EL>Β</span>e sure you learn to know what they are and how use them
+for His glory. James 4:6; James 1:21. </p>
+
+<p class=Verses>“But He gives a greater grace. Therefore it says, &quot;GOD IS
+OPPOSED TO THE PROUD, BUT GIVES GRACE TO THE HUMBLE.&quot;” (James 4:6, NASB) </p>
+
+<p class=Verses>“Therefore, putting aside all filthiness and all that remains
+of wickedness, in humility receive the word implanted, which is able to save
+your souls.” (James 1:21, NASB) </p>
+
+<p class=MsoNoSpacing>1 Corinthians 7:29-31 tells us that our time on this
+earth allotted to each us by God time is indeed short. The older you get, the
+faster the passage of time seems to be. Beware that legitimate living does not
+hinder the redemption of time. Do not misuse time by abusing time. You should
+ask yourself, “Am I using the little time I have here on earth to grow
+spiritually and thereby glorify God?” Do you know who God really is and what
+His plan is for your life? God has revealed His very thinking in printed form
+in the Word of God. He wants you to learn who He is and what He has planned for
+your life. </p>
+
+<p class=Verses>“But this I say, brethren, the time has been shortened, so that
+from now on those who have wives should be as though they had none; and those
+who weep, as though they did not weep; and those who rejoice, as though they
+did not rejoice; and those who buy, as though they did not possess; and those
+who use the world, as though they did not make full use of it; for the form of
+this world is passing away.”&nbsp;&nbsp;(1 Corinthians 7:29-31, NASB)</p>
+
+<p class=MsoNoSpacing>In Ephesians 5:16-18, “making the most of your time” is
+the answer to time utilization. The believer oriented to the grace of God
+regards every day to be a gracious gift from God and should “make the most of
+it” or redeem the time as unto the Lord. The only way for the believer to
+redeem the time given to them to live their lives on earth is when their soul
+is controlled by the Holy Spirit - in fellowship with God. The result of the
+filling of the Holy Spirit is “making the most of your time” allotted to each
+of us on this earth. Rom. 14:5-6. See categories on <a
+href="#_D-Filling_of_the_1">Filling of the Holy Spirit</a> and <a
+href="#_Spirituality_2">Spirituality</a>. </p>
+
+<p class=Verses>“making the most of your time, because the days are evil. So
+then do not be foolish, but understand what the will of the Lord is. And do not
+get drunk with wine, for that is dissipation, but be filled with the Spirit,”&nbsp;&nbsp;(Ephesians
+5:16-18, NASB)</p>
+
+<p class=Verses>“One person regards one day above another, another regards
+every day alike. Each person must be fully convinced in his own mind. He who
+observes the day, observes it for the Lord, and he who eats, does so for the
+Lord, for he gives thanks to God; and he who eats not, for the Lord he does not
+eat, and gives thanks to God.” (Romans 14:5-6, NASB)</p>
+
+<p class=MsoNoSpacing>Every day is a special day in the Christian way of life
+and one day is not holier than another day. Sunday is special only in the sense
+of assembly worship. This does not mean this is the only day we are commanded
+to assemble. Gal. 4:10; John 11:9-10. </p>
+
+<p class=Verses>“You observe days and months and seasons and years.” (Galatians
+4:10, NASB)</p>
+
+<p class=Verses>“Jesus answered, &quot;Are there not twelve hours in the day?
+If anyone walks in the day, he does not stumble, because he sees the light of
+this world. &quot;But if anyone walks in the night, he stumbles, because the
+light is not in him.&quot;” (John 11:9-10, NASB)</p>
+
+<p class=MsoNoSpacing>In Hebrews 10:25, we are commanded to assemble together
+to learn Bible doctrine and from that to grow spiritually. 2 Peter 3:18. </p>
+
+<p class=Verses>“not forsaking our own assembling together, as is the habit of
+some, but encouraging one another; and all the more as you see the day drawing
+near.” (Hebrews 10:25, NASB)</p>
+
+<p class=Verses>“but grow in the grace and knowledge of our Lord and Savior
+Jesus Christ. To Him be the glory, both now and to the day of eternity. Amen.”
+(2 Peter 3:18, NASB)</p>
+
+<p class=MsoNoSpacing>Each day of our time on earth the believer is to avoid
+the mental attitude sins from emotional revolt which produce self-induced
+misery. They are the most subtle and the most powerful foe against the
+spiritual life and spiritual growth. Mental attitude sins come in clusters. A
+short list includes jealousy, fear, envy, worry, vindictiveness, anxiety,
+pride, hatred, implacability, hostility, guilt complex, and antagonism. You’ll
+never be able to organize your days as long as mental attitude sins run rampant
+in your mind. When you spend time in pride, bitterness, guilt reaction and so
+on, it hinders your spiritual life. Psalms 27:1; Prov. 27:1; 1 John 2:9-11.</p>
+
+<p class=Verses>“A Psalm of David. The LORD is my light and my salvation; Whom
+shall I fear? The LORD is the defense of my life; Whom shall I dread?” (Psalms
+27:1, NASB)</p>
+
+<p class=Verses>“Do not boast about tomorrow, For you do not know what a day
+may bring forth.” (Proverbs 27:1, NASB)</p>
+
+<p class=Verses>“The one who says he is in the Light and yet hates his brother
+is in the darkness until now. The one who loves his brother abides in the Light
+and there is no cause for stumbling in him. But the one who hates his brother
+is in the darkness and walks in the darkness, and does not know where he is
+going because the darkness has blinded his eyes.” (1 John 2:9-11, NASB)</p>
+
+<p class=MsoNoSpacing>Only in the days of your spiritual life when you are
+filled with the Holy Spirit can God demonstrate His love for you in undeserved suffering
+and pressure. Psalms 102:1-2; Lam. 3:22-23.</p>
+
+<p class=Verses>“A Prayer of the Afflicted when he is faint and pours out his
+complaint before the LORD. Hear my prayer, O LORD! And let my cry for help come
+to You. Do not hide Your face from me in the day of my distress; Incline Your
+ear to me; In the day when I call answer me quickly.” (Psalms 102:1-2, NASB)</p>
+
+<p class=Verses>“The LORD'S lovingkindnesses indeed never cease, For His
+compassions never fail. They are new every morning; Great is Your
+faithfulness.” (Lamentations 3:22-23, NASB)</p>
+
+<p class=MsoNoSpacing>There is no suffering in eternity. Therefore, God’s
+provision for strength in undeserved suffering is greater than our adversities.
+You are to use God’s provision daily through the function of the grace
+apparatus for perception to develop an edification complex in the right lobe of
+the soul. Rev. 21:4; 2 Cor. 4:16. See category on <a
+href="#_Undeserved_Suffering_From">Undeserved Suffering From Testing</a>.</p>
+
+<p class=Verses>“and He will wipe away every tear from their eyes; and there
+will no longer be any death; there will no longer be any mourning, or crying,
+or pain; the first things have passed away.&quot;” (Revelation 21:4, NASB)</p>
+
+<p class=Verses>“Therefore we do not lose heart, but though our outer man is
+decaying, yet our inner man is being renewed day by day.” (2 Corinthians 4:16,
+NASB)</p>
+
+<p class=MsoNoSpacing>Each day the believer is to take in Bible doctrine. 2
+Cor. 4:6; Heb. 10:25. </p>
+
+<p class=Verses>“For God, who said, &quot;Light shall shine out of
+darkness,&quot; is the One who has shone in our hearts to give the Light of the
+knowledge of the glory of God in the face of Christ.” (2 Corinthians 4:6, NASB)</p>
+
+<p class=Verses>“not forsaking our own assembling together, as is the habit of
+some, but encouraging one another; and all the more as you see the day drawing
+near.” (Hebrews 10:25, NASB)</p>
+
+<p class=MsoNoSpacing>The future is in the Lord’s hands with its problems, its
+challenges, its joys, etc. So consequently, the believer needs to live one day
+at a time. </p>
+
+<p class=MsoNoSpacing><b>The Selfish Believer’s Planning </b></p>
+
+<p class=MsoNoSpacing>The only time we possess to glorify God in our life on
+earth is the number of days allotted in God's plan for us. In James 4:13-15,
+“Today or tomorrow” refers to the selfish believer who plans their time based
+only on the world they can see. They do not have eternity’s values in view.
+They make no plans for daily Bible doctrine intake or application. “Such a
+city” means they select where they want to live based only on the climate and
+where the dollar is easiest to make. There is no geographical planning to be in
+an area where the Lord has a pastor-teacher who is teaching Bible doctrine
+categorically. They go where they think the business is best, not where the
+Lord wants them to be in business to serve Him. They are actually ignoring the
+geographical will of God.</p>
+
+<p class=Verses>“Come now, you who say, &quot;Today or tomorrow we will go to
+such and such a city, and spend a year there and engage in business and make a
+profit.&quot; Yet you do not know what your life will be like tomorrow. You are
+just a vapor that appears for a little while and then vanishes away. Instead,
+you ought to say, &quot;If the Lord wills, we will live and also do this or
+that.&quot;” (James 4:13-15, NASB)</p>
+
+<p class=MsoNoSpacing>“Spend a year there” means they limit their stay. This is
+the use of man’s independent volition to the exclusion of God’s will. It is not
+how long does the Lord want me to stay, but how long I want to remain, how long
+can I make money here. Making money is a legitimate pursuit, but it should not
+be the main pursuit of your life. You may have your mind filled with important
+issues and decisions regarding your business and how you are going to spend
+your time in one year or two. But what about the Word? So what? They say, “It
+will fit in somewhere.” There is no concept of God’s will indicated here. </p>
+
+<p class=MsoNoSpacing>In James 4:13-15, “engage in business” means they plan
+their own activities, but no planning for Christian service. They plan their
+own activities and what  they are going to buy and sell with no thought of
+representing the Lord and serving Him. “Make a profit” indicated that they plan
+their business to gain a profit, but no planning for spiritual production in
+time or the building of an edification structure in their soul. Everything is
+related to how much they can make and running their business to the exclusion
+of God’s plan as a habit in their life. This believer’s problem is an ignorance
+of Bible doctrine. They may even substitute the phrase “If the Lord wills” for
+really knowing and believing the Word. </p>
+
+<p class=MsoNoSpacing><b>Life’s Priorities</b></p>
+
+<p class=MsoNoSpacing>Legitimate living does not hinder the believer’s making
+full use of their time. Legitimate living includes sorrow from loss of loved
+ones, adverse circumstances, pain, and illness. Sorrow should never get to the
+point of morbidity. Legitimate living also includes happiness. What makes you
+happy? We should have inner happiness all the time, but pursuit of happiness
+can cut into utilization of time. Legitimate living also includes the pursuit
+of pleasure. These are things that are relaxing to you personally apart from
+your daily work or professional activity. However, the believer should set
+their priorities in life with Bible doctrine always as number one. Pursuit of
+pleasure above the Word of God makes the believer a “lover of pleasure more
+than lover of God.” 2 Tim. 3:4.</p>
+
+<p class=Verses>“treacherous, reckless, conceited, lovers of pleasure rather
+than lovers of God,” (2 Timothy 3:4, NASB)</p>
+
+<p class=MsoNoSpacing>Boats are wonderful things, but some of you could care
+less about boats. An example of how pursuit of something can gain ascendancy in
+your life’s priorities is Sam and his boat. Sam built a boat and this hobby
+resulted in him no longer coming to Bible class or church services. Now that he
+has a boat, a trailer is needed. Then, he found the boat was underpowered so he
+worked overtime to pay for a larger boat motor. Then he decided he needed an
+inboard motor. Then he really had a headache, so went back to an outboard. Then
+he started sailing. The believer’s pursuits can be anything such as horses,
+guns, airplanes, autos, relatives, friends, parents, football, sports, bowling,
+golf, stamps, coins, etc.</p>
+
+<p class=MsoNoSpacing>In 1 Corinthians 7:31, we are commanded to make full use
+of time allotted to each of us. “Those who use the world” is not talking about
+worldliness, but refers to the fact that the reconstruction of this world was
+on a time basis. “Did not make full use of it” means to not misuse our time. “The
+form of this world” refers to the design of this world. What is the design of
+this world? Time! This world “is passing away” and time marches on.</p>
+
+<p class=Verses>“and those who use the world, as though they did not make full
+use of it; for the form of this world is passing away.” (1 Corinthians 7:31,
+NASB)</p>
+
+<p class=MsoNoSpacing>As believers, how do we utilize our time to the full?
+Learn Bible Doctrine every day. Live in the Word. Apply <i>epignosis</i> Bible
+doctrine or divine wisdom to life’s situations and decisions and experiences
+through the filling of the Holy Spirit. Keep short accounts of your sins by
+routinely using confessions of sin via 1 John 1:9. Make legitimate living a
+slave of Bible doctrine principles and application. In other words, make Bible doctrine
+a priority over the legitimate details of sorrow, happiness, and pleasure.</p>
+
+<p class=Verses>“If we confess our sins, He is faithful and righteous to
+forgive us our sins and to cleanse us from all unrighteousness.” (1 John 1:9,
+NASB)</p>
+
+<p class=MsoNoSpacing>Respect the fact that time marches on. Time is short. Focus
+on pinning down some area of life. In 1 Corinthians 7:34, “holy” means to be set
+apart unto God. Complete a crash program on learning Bible chapter titles. Complete
+a crash program on recorded Bible lessons in some category from a prepared
+pastor-teacher who is teaching using the I.C.E. methodology - Isagogics,
+Categories, Exegesis. </p>
+
+<p class=Verses>“and his interests are divided. The woman who is unmarried, and
+the virgin, is concerned about the things of the Lord, that she may be holy
+both in body and spirit; but one who is married is concerned about the things
+of the world, how she may please her husband.” (1 Corinthians 7:34, NASB)</p>
+
+<p class=MsoNoSpacing>Learn to focus without distraction upon the Lord and His
+thinking gained from the Word of God which is the very thinking of Jesus
+Christ. Develop the ability to study a subject start to finish undistracted.
+Develop the ability to view Bible study overall. Develop the ability to
+concentrate. Develop your self-discipline. 1 Cor. 2:16; 1 Cor. 7:35.  </p>
+
+<p class=Verses>“For WHO HAS KNOWN THE MIND OF THE LORD, THAT HE WILL INSTRUCT
+HIM? But we have the mind of Christ.” (1 Corinthians 2:16, NASB) </p>
+
+<p class=Verses>“This I say for your own benefit; not to put a restraint upon
+you, but to promote what is appropriate and to secure undistracted devotion to
+the Lord.” (1 Corinthians 7:35, NASB)</p>
+
+<p class=MsoNoSpacing>The thesis of 1 Corinthians 7:35 and the remainder of the
+chapter is that a single person has more time for the Lord. Marriage is not a
+time waster, but it is a time consumer. The worst thing in this life is to be
+married to the wrong person. It is legitimate to take the wife out to eat, do
+things with the family, rear the children and support the family. That is why
+many young people who were wonderful believers before marriage do not get to
+Bible class regularly after. They do not know how to utilize time. </p>
+
+</div>
+
+</body>
+
+</html>

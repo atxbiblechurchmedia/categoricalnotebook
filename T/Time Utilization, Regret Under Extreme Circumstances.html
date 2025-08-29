@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Time Utilization, Regret Under Extreme Circumstances</title>
+	</head>
+
+	<meta charset="utf-8">
+	
+	<style>
+	.separator {
+		border: none;
+		border-top: 2px solid #ccc;
+		width: 100%;
+		margin: 10px auto;
+		height: 1px;
+	}
+	/* Font Definitions */
+	@font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+	@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+	@font-face
+	{font-family:Calibri;
+		panose-1:2 15 5 2 2 2 4 3 2 4;}
+		@font-face
+		{font-family:"\@MS Mincho";
+		panose-1:2 2 6 9 4 2 5 8 3 4;}
+		/* Style Definitions */
+		p.MsoNormal, li.MsoNormal, div.MsoNormal
+		{margin:0.25in; /* ADJUST MsoNormal MARGIN */
+			font-size:16.0pt;
+			margin-bottom:6.0pt;
+			font-family:"Arial";
+			color:black;}
+			h2
+			{mso-style-link:"Heading 2 Char";
+			margin-top:12.0pt;
+			margin-right:.25in; /* ADJUST TITLE MARGIN */
+			margin-bottom:.5in;
+			margin-left:.25in; /* ADJUST TITLE MARGIN */
+			page-break-after:avoid;
+			font-size:20.0pt; /* ADJUST TITLE FONT SIZE */
+			font-family:"Arial";
+			color:black;}
+			p.MsoHeader, li.MsoHeader, div.MsoHeader
+			{mso-style-link:"Header Char";
+			margin:0in;
+			font-size:16.0pt;
+			font-family:"Arial";
+			color:black;}
+			p.MsoFooter, li.MsoFooter, div.MsoFooter
+			{mso-style-link:"Footer Char";
+			margin:0in;
+			font-size:16.0pt;
+			font-family:"Arial";
+			color:black;}
+			a:link, span.MsoHyperlink
+			{color:blue;
+				text-decoration:underline;}
+				p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+				{mso-style-name:"No Spacing\,Block Paragraph";
+				margin-top:6.0pt;
+				margin-right:.25in; /* ADJUST BLACK BODY TEXT MARGIN */
+				margin-bottom:6.0pt;
+				margin-left:.25in; /* ADJUST BLACK BODY TEXT MARGIN */
+				text-indent:.7pt;
+				text-autospace:none;
+				font-size:16.0pt; /* ADJUST BLACK BODY TEXT FONT SIZE */
+				font-family:"Arial";
+				color:black;}
+				span.Heading2Char
+				{mso-style-name:"Heading 2 Char";
+				mso-style-link:"Heading 2";
+				font-family:"Arial";
+				color:black;
+				font-weight:bold;}
+				p.Verses, li.Verses, div.Verses
+				{mso-style-name:Verses;
+					margin-top:6.0pt;
+					margin-right:.25in; /* ADJUST BLUE BIBLE VERSE MARGIN */
+					margin-bottom:6.0pt;
+					margin-left:.25in; /* ADJUST BLUE BIBLE VERSE MARGIN */
+					text-autospace:none;
+					font-size:16.0pt; /* ADJUST BLUE BIBLE VERSE TEXT FONT SIZE */
+					font-family:"Arial";
+					color:blue;
+					font-style:italic;}
+					span.HeaderChar
+					{mso-style-name:"Header Char";
+					mso-style-link:Header;}
+					span.FooterChar
+					{mso-style-name:"Footer Char";
+					mso-style-link:Footer;}
+					.MsoChpDefault
+					{color:black;}
+					/* Page Definitions */
+					@page WordSection1
+					{size:8.5in 11.0in;
+						margin:1.0in .75in 1.0in .75in;}
+						div.WordSection1
+						{page:WordSection1;}
+						/* List Definitions */
+						ol
+						{margin-bottom:0in;}
+						ul
+						{margin-bottom:0in;}
+	</style>
+	<center>
+		<a href="https://www.austinbible.church" target="_blank" style="font-family: Arial; font-size: 11.0pt;">
+			<img src="./abc_logo.png" alt="Austin Bible Church" style="width: 175px; height: auto;">
+			<br>
+			Austin Bible Church
+		</a>
+		<div>
+			<p>
+				<button onclick="window.open('https://austinbible.church/rgb-dotb-tcnb', '_blank')">Doctrinal Index</button>
+				<button onclick="document.location='./Time Utilization, Regret Under Extreme Circumstances.docx'">Download .docx</button>
+				<button onclick="window.open('./Time Utilization, Regret Under Extreme Circumstances.pdf', '_blank')">Download .pdf</button>
+			</p>
+		</div>
+	</center>
+	<style>
+	button {
+		background-color: #4CAF50; /* Button background color */
+		color: white; /* Text color */
+		border: none; /* Remove default border */
+		padding: 12px 24px; /* Adjust padding to make buttons bigger */
+		text-align: center; /* Center text */
+		text-decoration: none; /* Remove underline */
+		display: inline-block; /* Align buttons in a row */
+		font-size: 16px; /* Adjust font size */
+		border-radius: 5px; /* Make edges slightly rounded */
+		cursor: pointer; /* Change cursor to pointer on hover */
+		margin: 5px; /* Add space between buttons */
+		transition: background-color 0.3s; /* Smooth color transition */
+	}
+	button:hover {
+		background-color: #45a049; /* Darker color on hover */
+	}
+	button:active {
+		background-color: #3e8e41; /* Even darker on click */
+		}
+	</style>
+	<hr class="separator"
+
+
+
+<body lang=EN-US link=blue vlink="#954F72" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<h2>Time Utilization, Regret Under Extreme Circumstances</h2>
+
+<p class=MsoNoSpacing>Psalms 42-43 contain the musing of a captive of the
+Assyrian captivity in 722 BC. He is sitting in a dungeon contemplating how he
+got there and if he would ever get out. In Psalms 42:1-5, we have the
+reflections of this prisoner of war. In the crisis, he longed for the Word of
+God. Psalms 42:1. </p>
+
+<p class=Verses>“For the choir director. A Maskil of the sons of Korah. As the
+deer pants for the water brooks, So my soul pants for You, O God.” (Psalms
+42:1, NASB)</p>
+
+<p class=MsoNoSpacing>His first regret was that he wanted to learn more Bible
+doctrine and apply it to the current situation, but he had limited Bible
+doctrine in his soul. He had not made good use of his time earlier. His second
+regret was whether he would ever again get to go to Bible class. He saw people
+going by carrying their idols and it makes him thirst for the Lord. Psalms 42:2.
+</p>
+
+<p class=Verses>“My soul thirsts for God, for the living God; When shall I come
+and appear before God?” (Psalms 42:2, NASB)</p>
+
+<p class=MsoNoSpacing>In the crisis, he cried because of his circumstances. This
+is sinful weeping, being a cry-baby. There is no residual doctrine in his soul
+to sustain him. They taunted him daily asking him, “Hey, boy, where’s your
+God?” He could make no impact for Christ. He had no testimony. Psalms 42:3.</p>
+
+<p class=Verses>“My tears have been my food day and night, While they say to me
+all day long, &quot;Where is your God?&quot;” (Psalms 42:3, NASB)</p>
+
+<p class=MsoNoSpacing>In the crisis, he was depressed and remembered he didn’t take
+in the Word of God when he had many days to do so. He had other priorities. Psalms
+42:4 </p>
+
+<p class=Verses>“These things I remember and I pour out my soul within me. For
+I used to go along with the throng and lead them in procession to the house of
+God, With the voice of joy and thanksgiving, a multitude keeping festival.”
+(Psalms 42:4, NASB)</p>
+
+<p class=MsoNoSpacing>“I pour out my soul within me” means he was in extreme
+depression. He remembered long ago going to Bible class and learning the Word
+of God. His third regret was not making Bible class and the daily intake and
+application of Bible doctrine his highest priority in life. He had not made
+good use of his time. </p>
+
+<p class=MsoNoSpacing>He was in despair and knew that God had the answers but
+he couldn’t apply them. He had very little <i>epignosis</i> Bible doctrine in
+his soul to apply to the situation. He knew that only God could deliver him
+from this hopeless situation. Psalms 42:5.</p>
+
+<p class=Verses>“Why are you in despair, O my soul? And why have you become
+disturbed within me? Hope in God, for I shall again praise Him For the help of
+His presence.” (Psalms 42:5, NASB)</p>
+
+<p class=MsoNoSpacing>In Psalms 42:6, “O my God, my soul is in despair within
+me” means he was a believer and he realized that he actually brought this
+situation upon himself. He didn’t stockpile the Word when he had available time
+and his testing was minor compared to his current extreme situation. He then
+remembered the goodness of God as a young man. What had the Lord done for him?
+“The land of the Jordan” refers to a military deliverance. “The peaks of Hermon”
+refers to a famous hunting area and hunting deliverance. “Mount Mizar” refers
+to his deliverance from a natural disaster. </p>
+
+<p class=Verses>“O my God, my soul is in despair within me; Therefore I
+remember You from the land of the Jordan And the peaks of Hermon, from Mount
+Mizar.” (Psalms 42:6, NASB)</p>
+
+<p class=MsoNoSpacing>In Psalms 42:7, “Deep calls to deep” refers to when he
+was in a narrow canyon, a flash flood was caused by a huge downpour upstream
+and a wall of water hit him and he almost drowned. If God delivered him in time
+past, He would do it again. Grace will find a way.</p>
+
+<p class=Verses>“Deep calls to deep at the sound of Your waterfalls; All Your
+breakers and Your waves have rolled over me.” (Psalms 42:7, NASB)</p>
+
+<p class=MsoNoSpacing>In Psalms 42:8, he realized that he could not recall any
+Bible doctrine, but he did remember a song. “God of my life” means that he
+finally confessed his known sins to God the Father and got back into
+fellowship. However, he didn’t stay in fellowship long and became inconsistent.</p>
+
+<p class=Verses>“The LORD will command His lovingkindness in the daytime; And
+His song will be with me in the night, A prayer to the God of my life.” (Psalms
+42:8, NASB)</p>
+
+<p class=MsoNoSpacing>His inconsistency as a prisoner of war produced instability.
+In Psalms 42:9, “my rock” refers to Jesus Christ as his Messiah. He was
+questioning whether God was paying attention to his plight. This is
+inconsistent. “I go mourning” means he was deeply depressed.</p>
+
+<p class=Verses>“I will say to God my rock, &quot;Why have You forgotten me?
+Why do I go mourning because of the oppression of the enemy?&quot;” (Psalms
+42:9, NASB)</p>
+
+<p class=MsoNoSpacing>In Psalms 42:10, he was facing pressure without Bible
+doctrine and without fellowship. “As a shattering of my bones” refers to the
+constant pressure he was under. “My adversaries revile me” means the Assyrian
+soldiers picked on him because he was a cry-baby. The Assyrians did not bother
+courageous soldiers. They laugh at him and continued to ask him where was his
+God. “Boy, where is your God?”</p>
+
+<p class=Verses>“As a shattering of my bones, my adversaries revile me, While
+they say to me all day long, &quot;Where is your God?&quot;” (Psalms 42:10,
+NASB)</p>
+
+<p class=MsoNoSpacing>In Psalms 42:11, he repeats his lament of soul despair. </p>
+
+<p class=Verses>“Why are you in despair, O my soul? And why have you become
+disturbed within me? Hope in God, for I shall yet praise Him, The help of my
+countenance and my God.” (Psalms 42:11, NASB)</p>
+
+<p class=MsoNoSpacing>In Psalms 43:1, “Vindicate me” means to judge, to
+evaluate, to hear what he had to say. “An ungodly nation” refers to Assyria. “Deliver
+me from the deceitful and unjust man!” refers to his friend who talked him out
+of Bible class and could be translated, “Deliver me from that fraud, that
+phony, that kept me out of Bible class.”</p>
+
+<p class=Verses>“Vindicate me, O God, and plead my case against an ungodly
+nation; O deliver me from the deceitful and unjust man!” (Psalms 43:1, NASB)</p>
+
+<p class=MsoNoSpacing>In Psalms 43:2, he continues his inconsistency. He just
+can’t stay on the track. “Why have You rejected me?” is <span lang=HE dir=RTL
+style='font-family:"SBL Hebrew"'>זָנַח</span><span dir=LTR></span><span
+lang=HE><span dir=LTR></span> </span>(zanach) and means he is into self-pity.</p>
+
+<p class=Verses>“For You are the God of my strength; why have You rejected me?
+Why do I go mourning because of the oppression of the enemy?” (Psalms 43:2,
+NASB)</p>
+
+<p class=MsoNoSpacing>In Psalms 43:3-4, he finally realizes that he needs to
+return to learning the Word of God as a priority. “O send out Your light and
+Your truth” is his prayer for God to bring Bible doctrine to him. </p>
+
+<p class=Verses>“O send out Your light and Your truth, let them lead me; Let
+them bring me to Your holy hill And to Your dwelling places. Then I will go to
+the altar of God, To God my exceeding joy; And upon the lyre I shall praise
+You, O God, my God.” (Psalms 43:3-4, NASB)</p>
+
+<p class=MsoNoSpacing>This was the prayer of Paul when he prayed that God would
+give him the spirit of wisdom and revelation. In these verses, “knowledge”
+refers to <i>epignosis</i> Bible doctrine in the soul. Eph. 1:17; Phil. 1:9; Col.
+1:9-10.</p>
+
+<p class=Verses>“that the God of our Lord Jesus Christ, the Father of glory,
+may give to you a spirit of wisdom and of revelation in the knowledge of Him.”
+(Ephesians 1:17, NASB)</p>
+
+<p class=Verses>“And this I pray, that your love may abound still more and more
+in real knowledge and all discernment,” (Philippians 1:9, NASB)</p>
+
+<p class=Verses>“For this reason also, since the day we heard of it, we have
+not ceased to pray for you and to ask that you may be filled with the knowledge
+of His will in all spiritual wisdom and understanding, so that you will walk in
+a manner worthy of the Lord, to please Him in all respects, bearing fruit in
+every good work and increasing in the knowledge of God;” (Colossians 1:9-10,
+NASB)</p>
+
+<p class=MsoNoSpacing>Therefore, make good use of the time God has given you
+today so you can be thankful tomorrow as well. By the way, the prisoner of war
+did finally escape the Assyrians and wrote these two Psalms.</p>
+
+</div>
+
+</body>
+
+</html>
